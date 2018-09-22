@@ -1,0 +1,352 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#home").hover(function(){
+        $("#homehidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#homehidden").toggle();
+        }, function(){
+        $("#homehidden").toggle();
+    });
+    $("#borrow").hover(function(){
+        $("#borrowhidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#borrowhidden").toggle();
+        }, function(){
+        $("#borrowhidden").toggle();
+    });
+    $("#lend").hover(function(){
+        $("#lendhidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#lendhidden").toggle();
+        }, function(){
+        $("#lendhidden").toggle();
+    });
+    $("#help").hover(function(){
+        $("#helphidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#helphidden").toggle();
+        }, function(){
+        $("#helphidden").toggle();
+    });
+});
+</script>
+	<style >
+		body {
+    margin: 0;
+    text-align: center;
+}
+		div{
+			
+			
+			
+		}
+		.topnav{
+			position:fixed;
+			width: 100%;
+			height:10%;
+			box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+			background-color: #ffffff;
+
+
+		}	
+		.hidden{
+  display: none;
+  padding: 0px;
+}
+		.container1{
+			max-width: 38em;
+		  padding: 1em 3em 2em 3em;
+		  margin: 2em auto;
+		  background-color: #fff;
+		  border-radius: 4.2px;
+		  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.9);
+	}
+	.input{
+	background-color:#e3e3e3;  
+	width: 100%;
+	margin: 10px;
+	font-size:25px;
+	 text-align: center;
+}
+.input-m{
+background-color:black;  
+	width: 25%;
+	margin: 10px;
+	font-size:25px;
+	color: white;
+	border-radius: 2px;	
+}
+
+.checkbox{
+	font-size: 25px;
+}
+		.logo{
+			width:20%;
+			height:100%; 
+			float: left;
+		}
+		.searchbar{
+
+			width:50%;
+			height:100%; 
+			float:left;
+
+		}
+		.registerdrop{
+			width:20%;
+			height:100%; 
+			float:right;
+			
+		}
+		.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 18px;
+    font-size: 17px;
+    width: 33.33%;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.9);
+
+}
+
+.tablink:hover {
+    background-color: #777;
+    transform: scale(1.2);
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 25px;
+    height: 40%;
+    text-align: center;
+}
+.card{
+
+	width: 150px;
+	border-radius: 5px;
+	height: 150px;
+	box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.9);
+	margin: 20px;
+	float: left;
+	overflow: hidden;
+	background-size: cover;
+
+
+}
+
+.cardscroll
+{
+	
+	overflow-x: scroll;
+}
+.cardtext{
+
+	background-color: white;
+	opacity: 0.6;
+	font-size: 24px;
+	padding-top: 50px;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+}
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+		.mainpage{
+			margin-top:5%;
+			width:100%;
+			height: 95%;
+			float:left;
+		}
+		.mainpage
+		{	margin-top: 65px;
+			height: 90%;
+			width: 100%;
+		}
+		.sidenav{
+			width: 10%;
+			height:100%;
+			float: left;
+		}
+		.content{
+			background-color: #DCDCDC;
+			width: 90%;
+			height:100%;
+			overflow-y: scroll;
+			float: left;
+		}
+		form.example input[type=text]
+		{	float: left;
+			margin: 10px;
+			height: 70%;
+			width: 70%;
+			border-radius: 5px;
+			font-size: 17px;
+		}
+		form.example button
+		{	float: left;
+			margin: 10px;
+			height: 70%;
+			width: 20%;
+			border-radius: 5px;
+			font-size: 17px;
+
+		}
+		.dropdown{
+			height: 60px;
+
+		}
+		.btn{
+			margin: 10px;
+			width:80%;
+			height: 45px
+		}
+		.icon-bar {
+    width: 100%;
+    background-color: #555;
+    height:100%;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+    
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    
+    color: white;
+    font-size: 36px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+    transform: scale(1.5);
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+	</style>
+</head>
+<body>
+	<div class=topnav >
+	<div class="logo">
+		<h2><i class="fa fa-archive" aria-hidden="true" style="color:red ;font-size:34px;"></i>Rent out</h2>
+	</div>	
+	<div class="searchbar">
+		<form class="example" action="/action_page.php" >
+		  <input type="text" placeholder="Search.." name="search2" class="form-control">
+		 <button type="button" class="btn btn-primary">Search</button> 
+		</form>
+	</div>
+	<div class="registerdrop">
+		
+		<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login/Register
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Register</a></li>
+    <li><a href="#">Login</a></li>
+    
+  </ul>
+</div>
+	</div>
+	</div>
+
+	<div class="mainpage">
+		<div class="sidenav">
+			<div class="icon-bar">
+				 
+  <a href="#home" id="home"><i class="fa fa-home" aria-hidden="true"></i></i><p id="homehidden" class="hidden">Home</p></a> 
+  <a href="#borrow " id="borrow"><i class="fa fa-money" aria-hidden="true" size="34px"></i></i><p id="borrowhidden" class="hidden">Borrow</p></a> 
+  <a href="#lend" id="lend"><i class="fa fa-tags" aria-hidden="true"></i><p id="lendhidden" class="hidden">lend</p></a> 
+  <a href="#help" id="help"><i class="fa fa-globe"><p id="helphidden" class="hidden">help</p></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+			</div>
+		</div>
+		<div class="content">
+
+
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Oslo" class="tabcontent">
+  <h3>Oslo</h3>
+  <p>Oslo is the capital of Norway.</p>
+</div>
+
+<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">What</button>
+<button class="tablink" onclick="openCity('Paris', this, 'green')">Why</button>
+<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">How</button>
+
+<!--<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>!-->
+<p style="margin-top: 30px ;font-size: 24px; font-weight: bold;">What do you want to rent!</p>
+<div class="cardscroll">
+  <div class="card" style="background-image:url(furn.jpg); "> <div class="cardtext"> <p style="opacity: 1.0;">Furniture</p></div></div>
+  
+  <div class="card" style="background-image:url(elec.jpg);"><div class="cardtext"> <p style="opacity: 1.0;">Electronics</p></div></div>
+  <div class="card" style="background-image:url(veh.jpg);"><div class="cardtext"> <p style="opacity: 1.0;">Vehicles</p></div></div>
+  <div class="card" style="background-image:url(equip.jpg);"> <div class="cardtext"> <p style="opacity: 1.0;">Equipment and other</p></div></div>
+  <div class="card" style="background-color: blue;"><div class="cardtext"> <p style="opacity: 1.0;">Top deals</p></div></div>
+  <div class="card" style="background-color: brown;"><div class="cardtext"> <p style="opacity: 1.0;">In your area</p></div></div>
+  <div class="card" style="background-color: red;"><div class="cardtext"> <p style="opacity: 1.0;">Our discounts</p></div></div>
+  <div class="card" style="background-color: purple;"><div class="cardtext"> <p style="opacity: 1.0;">Suggestions</p></div></div>
+</div>     
+</div>
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+document.getElementById("defaultOpen").click();
+</script>
+			<!-- ADD THE MAIN CONTENT HERE !-->
+
+
+
+	
+		</div>
+	</div>
+
+
+</body>
+</html>

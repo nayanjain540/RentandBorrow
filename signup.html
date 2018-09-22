@@ -1,0 +1,288 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#home").hover(function(){
+        $("#homehidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#homehidden").toggle();
+        }, function(){
+        $("#homehidden").toggle();
+    });
+    $("#borrow").hover(function(){
+        $("#borrowhidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#borrowhidden").toggle();
+        }, function(){
+        $("#borrowhidden").toggle();
+    });
+    $("#lend").hover(function(){
+        $("#lendhidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#lendhidden").toggle();
+        }, function(){
+        $("#lendhidden").toggle();
+    });
+    $("#help").hover(function(){
+        $("#helphidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#helphidden").toggle();
+        }, function(){
+        $("#helphidden").toggle();
+    });
+});
+</script>
+	<style >
+		body {
+    margin: 0;
+    text-align: center;
+}
+		div{
+			
+			
+			
+		}
+		.topnav{
+			position:fixed;
+			width: 100%;
+			height:10%;
+			box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+			background-color: #ffffff;
+
+
+		}	
+		.hidden{
+  display: none;
+  padding: 0px;
+}
+		.container1{
+			max-width: 38em;
+		  padding: 1em 3em 2em 3em;
+		  margin: 2em auto;
+		  background-color: #fff;
+		  border-radius: 4.2px;
+		  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.9);
+	}
+	.input{
+	background-color:#e3e3e3;  
+	width: 100%;
+	margin: 10px;
+	font-size:25px;
+	 text-align: center;
+}
+.input-m{
+background-color:black;  
+	width: 25%;
+	margin: 10px;
+	font-size:25px;
+	color: white;
+	border-radius: 2px;	
+}
+
+.checkbox{
+	font-size: 25px;
+}
+		.logo{
+			width:20%;
+			height:100%; 
+			float: left;
+		}
+		.searchbar{
+
+			width:50%;
+			height:100%; 
+			float:left;
+
+		}
+		.registerdrop{
+			width:20%;
+			height:100%; 
+			float:right;
+			
+		}
+		.mainpage{
+			margin-top:5%;
+			width:100%;
+			height: 95%;
+			float:left;
+		}
+		.mainpage
+		{	margin-top: 65px;
+			height: 90%;
+			width: 100%;
+		}
+		.sidenav{
+			width: 10%;
+			height:100%;
+			float: left;
+		}
+		.content{
+			background-color: #DCDCDC;
+			width: 90%;
+			height:100%;
+			overflow-y: scroll;
+			float: left;
+		}
+		form.example input[type=text]
+		{	float: left;
+			margin: 10px;
+			height: 70%;
+			width: 70%;
+			border-radius: 5px;
+			font-size: 17px;
+		}
+		form.example button
+		{	float: left;
+			margin: 10px;
+			height: 70%;
+			width: 20%;
+			border-radius: 5px;
+			font-size: 17px;
+
+		}
+		.dropdown{
+			height: 60px;
+
+		}
+		.btn{
+			margin: 10px;
+			width:80%;
+			height: 45px
+		}
+		.icon-bar {
+    width: 100%;
+    background-color: #555;
+    height:100%;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+    
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    
+    color: white;
+    font-size: 36px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+	</style>
+</head>
+<body>
+	<div class=topnav >
+	<div class="logo">
+		<h2>Rent out</h2>
+	</div>	
+	<div class="searchbar">
+		<form class="example" action="/action_page.php" >
+		  <input type="text" placeholder="Search.." name="search2" class="form-control">
+		 <button type="button" class="btn btn-primary">Search</button> 
+		</form>
+	</div>
+	<div class="registerdrop">
+		
+		<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login/Register
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Register</a></li>
+    <li><a href="#">Login</a></li>
+    
+  </ul>
+</div>
+	</div>
+	</div>
+
+	<div class="mainpage">
+		<div class="sidenav">
+			<div class="icon-bar">
+				 
+  <a href="#home" id="home"><i class="fa fa-home" aria-hidden="true"></i></i><p id="homehidden" class="hidden">Home</p></a> 
+  <a href="#borrow " id="borrow"><i class="fa fa-money" aria-hidden="true" size="34px"></i></i><p id="borrowhidden" class="hidden">Borrow</p></a> 
+  <a href="#lend" id="lend"><i class="fa fa-tags" aria-hidden="true"></i><p id="lendhidden" class="hidden">lend</p></a> 
+  <a href="#help" id="help"><i class="fa fa-globe"><p id="helphidden" class="hidden">help</p></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+			</div>
+		</div>
+		<div class="content">
+
+
+<div class="container1">
+  <form name=myForm onsubmit="return(validateForm());">
+      <h4>Account</h4>
+      <div >
+        <input type="text" placeholder="Full Name"/ class="input" name="fname" >
+       </div>
+      <div >
+        <input type="emails" placeholder="Email Adress"/ class="input" name="id">
+              </div>
+      <div >
+        <input type="password" placeholder="Password"/ class="input">
+       </div>
+    
+    <div>
+        <h4>Date of Birth</h4>
+        <div>
+<input type="date" class="input" >
+         </div>
+    
+     
+        <h4>Gender</h4>
+        <div class="input-group">
+          <input type="radio" name="gender" value="male">
+          <label for="gender-male" class="checkbox">Male</label>
+          <input type="radio" name="gender" value="female" class="checkbox">
+          <label for="gender-female" class="checkbox">Female</label>
+        </div>
+      <h4>Payment Details</h4>
+      <div class="input">
+        <input type="radio" name="payment-method" value="card" id="payment-method-card" checked="true"/ >
+        <label for="payment-method-card"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
+        <input type="radio" name="payment-method" value="paypal" id="payment-method-paypal"/>
+        <label for="payment-method-paypal"> <span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
+      </div>
+      <div >
+        <input type="text" placeholder="Card Number"/ class="input">
+      </div>
+      
+        <div>
+          <input type="text" placeholder="Card CVV"/ class="input">
+          
+        </div>
+      
+          <input type="date" class="input">
+         
+        </div>
+      <h4>Terms and Conditions</h4>
+        <input type="checkbox" id="terms"/>
+        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+      <div><input type="submit" class="input-m" ></div>
+  </form>
+</div>
+
+			<!-- ADD THE MAIN CONTENT HERE !-->
+
+
+
+	
+		</div>
+	</div>
+
+
+</body>
+</html>

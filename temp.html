@@ -1,0 +1,518 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#home").hover(function(){
+        $("#homehidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#homehidden").toggle();
+        }, function(){
+        $("#homehidden").toggle();
+    });
+    $("#borrow").hover(function(){
+        $("#borrowhidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#borrowhidden").toggle();
+        }, function(){
+        $("#borrowhidden").toggle();
+    });
+    $("#lend").hover(function(){
+        $("#lendhidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#lendhidden").toggle();
+        }, function(){
+        $("#lendhidden").toggle();
+    });
+    $("#help").hover(function(){
+        $("#helphidden").css("font-size","20px");
+        $(".slidenav").css("width","200px");
+        $("#helphidden").toggle();
+        }, function(){
+        $("#helphidden").toggle();
+    });
+});
+</script>
+	<style >
+		body {
+    margin: 0;
+    text-align: center;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 1;
+}
+
+#rig {
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    
+}
+
+li{
+	margin: 350px;
+}
+#rig li {
+    display: inline-block;
+    width:33%;
+   
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height:50%;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+  
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+    border-radius: 25px;
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: black;
+    background-size:50px 50px;
+    opacity:0;
+   box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.5); 
+    transition:all 0.6s;
+
+}
+#rig li:hover .rig-overlay {
+    opacity:1;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:35%;
+    color:white;
+    opacity:0;
+   
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:1;
+}
+.ola{
+	height: 40%;
+	width: 50%;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 30px;
+  padding-top: 10px;
+  color: white;
+  background-color: gray;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Oswald',sans-serif;
+  margin: auto;
+}
+
+
+		div{
+			
+			
+			
+		}
+		.topnav{
+			position:fixed;
+			width: 100%;
+			height:10%;
+			box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+			background-color: #ffffff;
+
+
+		}	
+		.hidden{
+  display: none;
+  padding: 0px;
+}
+		.container1{
+			max-width: 38em;
+		  padding: 1em 3em 2em 3em;
+		  margin: 2em auto;
+		  background-color: #fff;
+		  border-radius: 4.2px;
+		  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.9);
+	}
+	.input{
+	background-color:#e3e3e3;  
+	width: 100%;
+	margin: 10px;
+	font-size:25px;
+	 text-align: center;
+}
+.input-m{
+background-color:black;  
+	width: 25%;
+	margin: 10px;
+	font-size:25px;
+	color: white;
+	border-radius: 2px;	
+}
+
+.checkbox{
+	font-size: 25px;
+}
+		.logo{
+			width:20%;
+			height:100%; 
+			float: left;
+		}
+		.searchbar{
+
+			width:50%;
+			height:100%; 
+			float:left;
+
+		}
+		.registerdrop{
+			width:20%;
+			height:100%; 
+			float:right;
+			
+		}
+		.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 18px;
+    font-size: 17px;
+    width: 33.33%;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.9);
+
+}
+
+.tablink:hover {
+    background-color: #777;
+    transform: scale(1.2);
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 25px;
+    height: 40%;
+    text-align: center;
+}
+.card{
+
+	width: 150px;
+	border-radius: 5px;
+	height: 150px;
+	box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.9);
+	margin: 20px;
+	float: left;
+	overflow: hidden;
+	background-size: cover;
+
+
+}
+
+.cardscroll
+{
+	
+	overflow-x: scroll;
+}
+.cardtext{
+
+	background-color: white;
+	opacity: 0.6;
+	font-size: 24px;
+	padding-top: 50px;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+}
+#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}
+		.mainpage{
+			margin-top:5%;
+			width:100%;
+			height: 95%;
+			float:left;
+		}
+		.mainpage
+		{	margin-top: 65px;
+			height: 90%;
+			width: 100%;
+		}
+		.sidenav{
+			width: 10%;
+			height:100%;
+			float: left;
+		}
+		.content{
+			background-color: #DCDCDC;
+			width: 90%;
+			height:100%;
+			overflow-y: scroll;
+			float: left;
+		}
+		form.example input[type=text]
+		{	float: left;
+			margin: 10px;
+			height: 70%;
+			width: 70%;
+			border-radius: 5px;
+			font-size: 17px;
+		}
+		form.example button
+		{	float: left;
+			margin: 10px;
+			height: 70%;
+			width: 20%;
+			border-radius: 5px;
+			font-size: 17px;
+
+		}
+		.dropdown{
+			height: 60px;
+
+		}
+		.btn{
+			margin: 10px;
+			width:80%;
+			height: 45px
+		}
+		.icon-bar {
+    width: 100%;
+    background-color: #555;
+    height:100%;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+    
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    
+    color: white;
+    font-size: 36px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1.2);
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+    transform: scale(1.5);
+}
+
+.active {
+    background-color: #4CAF50 !important;
+}
+	</style>
+</head>
+<body>
+	<div class=topnav >
+	<div class="logo">
+		<h2><i class="fa fa-archive" aria-hidden="true" style="color:red ;font-size:34px;"></i>Rent out</h2>
+	</div>	
+	<div class="searchbar">
+		<form class="example" action="/action_page.php" >
+		  <input type="text" placeholder="Search.." name="search2" class="form-control">
+		 <button type="button" class="btn btn-primary">Search</button> 
+		</form>
+	</div>
+	<div class="registerdrop">
+		
+		<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Login/Register
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Register</a></li>
+    <li><a href="#">Login</a></li>
+    
+  </ul>
+</div>
+	</div>
+	</div>
+
+	<div class="mainpage">
+		<div class="sidenav">
+			<div class="icon-bar">
+				 
+  <a href="#home" id="home"><i class="fa fa-home" aria-hidden="true"></i></i><p id="homehidden" class="hidden">Home</p></a> 
+  <a href="#borrow " id="borrow"><i class="fa fa-money" aria-hidden="true" size="34px"></i></i><p id="borrowhidden" class="hidden">Borrow</p></a> 
+  <a href="#lend" id="lend"><i class="fa fa-tags" aria-hidden="true"></i><p id="lendhidden" class="hidden">lend</p></a> 
+  <a href="#help" id="help"><i class="fa fa-globe"><p id="helphidden" class="hidden">help</p></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+			</div>
+		</div>
+
+		<div class="content">
+
+
+
+<ul id="rig">
+    <li>
+        <a class="rig-cell" href="https://www.google.co.in/maps?q=lalbaug+parel+location&rlz=1C1CHBF_enIN756IN756&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjkw4TpnuDaAhWMRo8KHRlDAzMQ_AUIDSgE">
+            <img class="rig-img" src="1.jpg" >
+            <span class="rig-overlay"> <img class="ola" src="bolt.jpg" alt="John"><img class="ola" src="2.jpg" alt="John">
+</span>
+            <span class="rig-text" >  <h1>Tata Tiago 1200 CC</h1>
+  <p class="title">2016 Edition-2 Years Old,in complete working position.<br><dates>Available from 25-04-2018 to 31-04-2018</dates> </p>
+  <p>Price:2500/- day</p>
+<p>  <button class="rig-img" >Location</button></p>
+  </span>
+  
+        </a>
+    </li>
+   
+   <li>
+        <a class="rig-cell" href="https://www.google.co.in/maps/place/Maps+IT+Solutions/@19.0128062,72.8424448,13z/data=!4m8!1m2!2m1!1smaps!3m4!1s0x3be7c92f8d62e3d5:0x624c66fca3a4997c!8m2!3d19.046428!4d72.84134">
+            <img class="rig-img" src="rolex.jpg">
+            <span class="rig-overlay"> <img class="ola" src="r2.jpg" alt="John"><img class="ola" src="r3.jpg" alt="John">
+</span>
+            <span class="rig-text" >  <h1>Rolex Oyster Perpetual </h1>
+  <p class="title">BlueGOLD-6 Years Old,still shiny as new.<br><dates>Available from 27-08-2018 to 31-04-2019</dates> </p>
+  <p>Price:150/- day</p>
+<p>  <button class="rig-img" >Location</button></p>
+  </span>
+  
+        </a>
+    </li>
+    
+<li>
+        <a class="rig-cell" href="https://www.google.co.in/maps/place/Gateway+Of+India+Mumbai/@18.9219892,72.8324656,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7d1c73a0d5cad:0xc70a25a7209c733c!8m2!3d18.9219841!4d72.8346543">
+            <img class="rig-img" src="n1.jpg">
+            <span class="rig-overlay"> <img class="ola" src="n2.jpg" alt="John"><img class="ola" src="n3.jpeg" alt="John">
+</span>
+            <span class="rig-text" >  <h1>Nintendo 3DS XL </h1>
+  <p class="title">2017 Model-1 Year Old,catridge with 20 games.<br><dates>Available from 24-03-2018 to 24-08-2019</dates> </p>
+  <p>Price:100/- day</p>
+<p>  <button class="rig-img">Location</button></p>
+  </span>
+  
+        </a>
+    </li>
+   
+<li>
+        <a class="rig-cell" href="https://www.google.co.in/maps/search/mulund/@19.1582632,72.9226742,13z/data=!3m1!4b1">
+            <img class="rig-img" src="a1.jpg">
+            <span class="rig-overlay"> <img class="ola" src="a2.jpg" alt="John"><img class="ola" src="a3.jpg" alt="John">
+</span>
+            <span class="rig-text" >  <h1>Nke Free Air 5.0 </h1>
+  <p class="title">2018 Model-6 Months Old, U.K. Size 8.<br><dates>Available from 26-05-2018 to 28-07-2019</dates> </p>
+  <p>Price:150/- day</p>
+<p>  <button class="rig-img" >Location</button></p>
+  </span>
+  
+        </a>
+    </li>
+
+<li>
+        <a class="rig-cell" href="https://www.google.co.in/maps/place/Phoenix+Marketcity/@19.0862817,72.8866136,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c887efb78b9f:0x9f9dc99c3119470a!8m2!3d19.0862766!4d72.8888023">
+            <img class="rig-img" src="t3.jpg">
+            <span class="rig-overlay"> <img class="ola" src="t2.jpg" alt="John"><img class="ola" src="t1.jpg" alt="John">
+</span>
+            <span class="rig-text" >  <h1>Honda Dio 125CC </h1>
+  <p class="title">2014 Model-4 Years Old, Constantly Serviced.<br><dates>Available from 23-03-2018 to 07-07-2019</dates> </p>
+  <p>Price:250/- day</p>
+<p>  <button class="rig-img" >Location</button></p>
+  </span>
+  
+        </a>
+    </li>
+
+<li>
+        <a class="rig-cell" href="https://www.google.co.in/maps/place/Phoenix+Marketcity/@19.0862817,72.8866136,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c887efb78b9f:0x9f9dc99c3119470a!8m2!3d19.0862766!4d72.8888023">
+            <img class="rig-img" src="d3.jpg">
+            <span class="rig-overlay"> <img class="ola" src="d2.jpg" alt="John"><img class="ola" src="d1.jpg" alt="John">
+</span>
+            <span class="rig-text" >  <h1>Samsung Microwave Over </h1>
+  <p class="title">2016 Model-2 Years Old, No problems till date.<br><dates>Available from 28-11-2018 to 07-07-2019</dates> </p>
+  <p>Price:50/- day</p>
+<p>  <button class="rig-img" >Location</button></p>
+  </span>
+  
+        </a>
+    </li>
+
+
+   
+  
+   
+   
+    
+ </ul>
+
+			
+<!--add content!-->
+
+
+	
+		</div>
+	</div>
+
+
+</body>
+</html>

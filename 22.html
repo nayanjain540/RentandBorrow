@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style type="text/css">
+.container {
+  position: relative;
+  width: 50%;
+}
+img.b {
+ display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+ 
+        background-color: white;
+     }
+   img{
+height: 300px;
+width: 300px;
+box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.5); 
+   } 
+   .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  display:inline-block;
+}
+div:hover  {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+<body>
+<div class="row">
+<div class="column" >
+<div class="container"><img src="1.jpg"> <div class="overlay">
+    <div class="text">Hello World</div></div>
+
+<div class="container"><img src="1.jpg"> <div class="overlay">
+    <div class="text">Hello World</div></div>
+
+<div class="container"><img src="1.jpg"> <div class="overlay">
+    <div class="text">Hello World</div></div>
+  
+
+    </div>
+<div class="column">
+<img src="1.jpg"> <!--<div class="overlay">
+    <div class="text">Hello World</div></div>
+-->
+<img src="1.jpg"> 
+<img src="1.jpg"> 
+
+    </div>
+
+
+
+</div>
+</body>
+</html>
+
